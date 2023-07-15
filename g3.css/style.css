@@ -4,6 +4,12 @@
 /* Shared style */
     .btn-prymary{
         color: #fff;
+        border-radius: 8px;
+        background-color: #FF900E;
+        border: none;
+        padding: 20px 25px;
+        font-size: 1.25rem;
+        cursor: pointer;
     }
 /* Header Style start hear */
     header{
@@ -47,4 +53,29 @@
     }
     .banner-description{
         color: #727272;
+    }
+    .banner img{
+        margin-top: 20px;
+        width: 100%;
+    }
+/*Respnsive media quary  */
+
+/* Mobile devices */
+    @media screen and (max-width:576px) {
+        header{
+            padding: 20px;
+        }
+        nav{
+            flex-direction: column;
+        }
+    }
+/*Tablet or medium devices  */
+    @media screen and (min-width:576px) and (max-width:992px) {
+        header{
+            padding: 50px;
+        }
+        nav{
+            flex-direction: column;
+        }
+        
     }
