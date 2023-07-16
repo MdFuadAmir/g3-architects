@@ -19,10 +19,16 @@
         font-size: 45px;
         font-weight: 700;
     }
+    .section-titel{
+        border-left: 4px solid #FF900E;
+        padding-left: 10px;
+        font-size: 35px;
+    }
+    
 /* Header Style start hear */
     header{
         background-color: rgba(255, 144, 14, 0.10);
-        padding: 50px 230px;
+        padding: 10px 230px;
     }
     nav{
         display: flex;
@@ -30,7 +36,7 @@
         align-items: center;
     }
     .nav-titel{
-        font-size: 2.8rem;
+        font-size: 1.8rem;
         font-weight: 700;
         color: #131313;
     }
@@ -64,7 +70,7 @@
     }
 /*Main style hear  */
     main{
-        max-width: 1440px;
+        max-width: 1040px;
         margin: 70px auto;
     }
 /* Teams style */
@@ -75,14 +81,15 @@
      .team-img-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 1rem;
+        
      }
      .teams-contents  {
         padding-left: 70px;
         padding-right: 70px
      }
      .teams-titel{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
      }
      .span-1{
         color:#727272;
@@ -96,7 +103,43 @@
         color: #FF900E;
         font-weight: 700;
     }
+/* featuer section style */
+    .features{
+        margin-top: 130px;
+        display: flex;
+        gap: 90px;
 
+    }
+    .features-content .card{
+        margin-bottom: 20px;
+        padding: 25px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    }
+    .features-img > img{
+        width: 500px;
+        height: 90%;
+        margin-left: 50px;
+
+    }
+    .ten-year{
+        background-color: #FF900E;
+        text-align: center;
+        border: no ne;
+        padding: 10px;
+        border-radius: 8px;
+        color: #fff;
+        position: relative;
+        bottom: 50px;
+        right: 50px;
+        width: 40%;
+    
+    }
+    .ten-year h1{
+        font-size: 2rem;
+        margin: 0px;
+    }
 /* some facts style */
     .facts-card-container{
         display: flex;
@@ -134,10 +177,17 @@
     .sponsors-img-container img{
         width: 165px;
     }
-
-
-
-
+    footer{
+    display: flex;
+    justify-content: center;
+    }
+    .footer-div{
+        background-color: rgb(0, 0, 0);
+        padding: 10px 190px;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
 /*Respnsive media quary  */
 
 /* Mobile devices */
@@ -148,9 +198,13 @@
         nav,
         .teams-container,
         .facts-card-container,
-        .sponsors-img-container
+        .sponsors-img-container,
+        .features
         {
             flex-direction: column;
+        }
+        .features-img > img{
+            width: 100%;
         }
         .team-img-container{
             grid-template-columns: 1fr;
